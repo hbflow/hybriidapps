@@ -8,11 +8,7 @@
 
     The path provided below has to start and end with a slash "/" in order for
     it to work correctly.
-
-    Fore more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
   -->
-
 
   <!--Made With ❤ by HybriidBox-->
 
@@ -21,19 +17,18 @@
   <meta name="description" content="A new Flutter project.">
 
   <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="hybriidflow">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="apple-touch-icon" href="/hybriidflow/icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-  
+  <link rel="icon" type="image/png" href="/hybriidflow/favicon.png"/>
 
   <title>hybriidflow</title>
   <style>
     body {
-      background-color: #ed3535;
+      background-color: #919191;
       margin: 0;
       padding: 0;
       overflow-x: hidden; /* Hide horizontal scrollbar */
@@ -41,7 +36,7 @@
 
     @font-face {
       font-family: myFirstFont;
-      src: url("icons/VarelaRound-Regular.ttf");
+      src: url("/hybriidflow/icons/VarelaRound-Regular.ttf");
     }
 
     .inner {
@@ -65,29 +60,23 @@
       -webkit-touch-callout: none; /* Disable callout on long-press on iOS */
     }
   </style>
-  <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="/hybriidflow/manifest.json">
 </head>
 
+<body>
+  <div class="inner">
+    <img src="/hybriidflow/icons/hybriidboxloading.png" />
+  </div>
 
-
-
-<div class="inner">
-  <img src="icons/hybriidboxloading.png" />
-</div>
-
-  <div
-  <!-- This script installs service_worker.js to provide PWA functionality to
-       application. For more information, see:
-       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <!-- This script installs flutter_service_worker.js to provide PWA functionality -->
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=3498602226');
+        navigator.serviceWorker.register('/hybriidflow/flutter_service_worker.js?v=3498602226');
       });
     }
   </script>
-  <script src="main.dart.js" type="application/javascript"></script>
 
-
+  <script src="/hybriidflow/main.dart.js" type="application/javascript"></script>
 </body>
 </html>
